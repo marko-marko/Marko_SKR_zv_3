@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 3 - Блочна верстка</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Шапка */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            height: 15%; 
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 5px solid #f39c12;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            background: #f39c12;
+            padding: 5px 10px;
+            color: #2c3e50;
+            border-radius: 4px;
+        }
+
+        /* Контейнер для навігації та контенту */
+        .main-container {
+            display: flex; /* Гнучкий контейнер */
+            height: 85%; /* Решта висоти екрану */
+        }
+
+        /* Навігаційна панель */
+        nav {
+            width: 25%; /* Ширина блоку */
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            background: #fff;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #f39c12;
+            color: white;
+        }
+
+        /* Основна інформація */
+        main {
+            width: 75%; /* Ширина блоку */
+            background-color: white;
+            padding: 40px;
+            overflow-y: auto; /* Прокрутка, якщо тексту багато */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span>IT</span> TechSolutions
+        </div>
+    </header>
+
+    <div class="main-container">
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Ласкаво просимо до TechSolutions</h1>
+            <p>Ми надаємо найкращі послуги у сфері веб-розробки та дизайну.</p>
+            
+            <div class="product">
+                <h3>Наші послуги</h3>
+                <p>Розробка сайтів під ключ, підтримка серверів, SEO оптимізація.</p>
+            </div>
+
+            <div class="product">
+                <h3>Контакти</h3>
+                <p>м. Львів, вул. Студентська 12<br>
+                Email: info@techsolutions.com</p>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
